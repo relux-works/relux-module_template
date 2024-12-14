@@ -1,12 +1,12 @@
 
 public extension MODULE_NAME {
-    protocol IMODULE_NAMEService {
+    protocol IMODULE_NAMEService: Actor {
         
     }
 }
 
 public extension MODULE_NAME {
-	final class Service: IMODULE_NAMEService {
+    actor Service: IMODULE_NAMEService {
 		private let fetcher: IMODULE_NAMEApiFetcher
 		
         public init(
