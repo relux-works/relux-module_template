@@ -12,11 +12,14 @@ public extension MODULE_NAME {
         private let decoder: JSONDecoder = .init()
         private let encoder: JSONEncoder = .init()
         private let apiClient: IRpcClient
+        private let tokenProvider: any IBearerTokenProvider
         
         public init(
-            apiClient: IRpcClient
+            apiClient: IRpcClient,
+            tokenProvider: any IBearerTokenProvider
         ) {
             self.apiClient = apiClient
+            self.tokenProvider = tokenProvider
         }
 		
     }
