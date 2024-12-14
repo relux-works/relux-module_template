@@ -3,6 +3,12 @@ import Relux
 
 public extension MODULE_NAME.Business {
 	actor State: Relux.State {
+        
+        public init(
+            
+        ) {
+            
+        }
 		
         public func cleanup() async {
 			

@@ -8,15 +8,15 @@ public extension MODULE_NAME.UI {
 		private var pipelines: Set<AnyCancellable> = []
 		
         public init(
-
+            module_nameBusinessState: MODULE_NAME.Business.State
 		) {
 			Task {
-				await initPipelines()
+				await initPipelines(module_nameBusinessState: module_nameBusinessState)
 			}
 		}
 		
-		private func initPipelines() async {
-
+		private func initPipelines(module_nameBusinessState: MODULE_NAME.Business.State) async {
+            
 		}
 	}
 }
