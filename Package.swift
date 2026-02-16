@@ -15,11 +15,11 @@ let package = Package(
 	],
     dependencies: [
         .package(
-            url: "git@github.com:ivalx1s/darwin-httpclient.git",
+            url: "git@github.com:relux-works/darwin-httpclient.git",
             .upToNextMajor(from: "3.2.2")
         ),
         .package(
-            url: "git@github.com:ivalx1s/darwin-relux.git",
+            url: "git@github.com:relux-works/swift-relux.git",
             .upToNextMajor(from: "5.0.2")
         ),
         
@@ -29,7 +29,7 @@ let package = Package(
 			name: "MODULE_NAME",
 			dependencies:  [
                 .product(name: "HttpClient", package: "darwin-httpclient"),
-                .product(name: "Relux", package: "darwin-relux"),
+                .product(name: "Relux", package: "swift-relux"),
 			]
 		),
 	]
