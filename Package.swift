@@ -15,7 +15,7 @@ let package = Package(
 	],
     dependencies: [
         .package(
-            url: "git@github.com:relux-works/darwin-httpclient.git",
+            url: "git@github.com:relux-works/swift-httpclient.git",
             .upToNextMajor(from: "3.2.2")
         ),
         .package(
@@ -28,7 +28,7 @@ let package = Package(
 		.target(
 			name: "MODULE_NAME",
 			dependencies:  [
-                .product(name: "HttpClient", package: "darwin-httpclient"),
+                .product(name: "HttpClient", package: "swift-httpclient"),
                 .product(name: "Relux", package: "swift-relux"),
 			]
 		),
