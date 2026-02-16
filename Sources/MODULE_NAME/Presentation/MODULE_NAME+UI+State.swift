@@ -4,7 +4,7 @@ import Relux
 
 public extension MODULE_NAME.UI {
 	@MainActor
-    final class State: Relux.Presentation.StatePresenting {
+    final class State: Relux.UIState {
 		private var pipelines: Set<AnyCancellable> = []
 		
         public init(

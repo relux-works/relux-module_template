@@ -2,7 +2,7 @@ import Combine
 import Relux
 
 public extension MODULE_NAME.Business {
-	actor State: Relux.State {
+	actor State: Relux.BusinessState {
         
         public init(
             
