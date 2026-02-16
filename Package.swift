@@ -15,12 +15,12 @@ let package = Package(
 	],
     dependencies: [
         .package(
-            url: "git@github.com:relux-works/swift-httpclient.git",
-            .upToNextMajor(from: "3.2.2")
+            url: "https://github.com/relux-works/swift-httpclient.git",
+            .upToNextMajor(from: "6.0.0")
         ),
         .package(
-            url: "git@github.com:relux-works/swift-relux.git",
-            .upToNextMajor(from: "5.0.2")
+            url: "https://github.com/relux-works/swift-relux.git",
+            .upToNextMajor(from: "9.0.0")
         ),
         
     ],
